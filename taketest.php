@@ -14,7 +14,7 @@
         while($row=$result->fetch_assoc()) {
             echo '<div id="product-101" class="product">';
             //echo '<form action="taketest1.php?testid='.$row["test_id"].'" method="POST">';
-            $sql2="SELECT * from examineescore";
+            $sql2="SELECT * from examineescore WHERE user_id='".$_SESSION['userdata']['user_id']."'";
             $result2=$conn->query($sql2);
             if($result2->num_rows>0) {
                 $count=0;

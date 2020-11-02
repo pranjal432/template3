@@ -13,7 +13,7 @@
     <?php
         
         if(isset($_SESSION['admindata'])) {
-            echo "<center><h1 style='margin-top:220px;'>Welcome ".$_SESSION['admindata']['adminname']."</h1></center>";
+            echo "<center><h1 style='margin-top:220px;'>Welcome to the Admin Panel ".$_SESSION['admindata']['adminname']."</h1></center>";
         }
 
     ?>

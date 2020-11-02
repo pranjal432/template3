@@ -25,7 +25,7 @@
                 while($row=$result->fetch_assoc()) {
 
                     
-                $sql3="SELECT * from examineescore";
+                $sql3="SELECT * from examineescore WHERE user_id='".$_SESSION['userdata']['user_id']."'";
                 $result3=$conn->query($sql3);
                 if($result3->num_rows>0) {
                     while($row3=$result3->fetch_assoc()) {

@@ -21,7 +21,7 @@
 <label>Test Name : </label>
 <input type="text" value="<?php echo $a; ?>" name="testname1"><br><br><br><br>
 
-<input type="submit" value="Add new Question" name="addnewquestion"><br>
+<input type="submit" value="Add new Question" name="addnewquestion" class="add-to-cart"><br>
 
 <?php
 

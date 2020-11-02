@@ -57,7 +57,7 @@ if(isset($_GET['testid'])) {
 
 
         }
-        echo "<center><input type='submit' class='add-to-cart' name='submit' value='Submit'></center></form>";
+        echo "<center><input type='submit' style='color:red;background-color:yellow;width:90px;height:40px;' name='submit' value='Submit'></center></form>";
 
         
         if($n!=0) {
@@ -129,7 +129,7 @@ if(isset($_GET['testid'])) {
                             if($count10==0) {
                                 
                                 
-                                $sql8="INSERT into examineescore(user_id,test_id,datetime,score) VALUES('".$_SESSION['userdata']['user_id']."','".$_GET['testid']."','".$js1."',current_timestamp(),1)";
+                                $sql8="INSERT into examineescore(user_id,test_id,datetime,score) VALUES('".$_SESSION['userdata']['user_id']."','".$_GET['testid']."',current_timestamp(),1)";
                                 if($conn->query($sql8)==true) {
                                     //echo "inserted2";
                                 }
